@@ -3,5 +3,5 @@
 *Instale as depencias da aplicação : 
 npm install
 
-*Inicializa a aplicação :
+*Inicialize a aplicação :
 node ./src/server.js
