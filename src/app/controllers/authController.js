@@ -80,11 +80,11 @@ router.post('/forgot_password', async (req,res) => {
 
 
         mailer.sendMail({
-            from: 'UNC@server.com',
+            from: 'UNC@server.br',
             to: 'user@email.com',
             subject: 'Mensagem de recuperação de senha',
              text: 'Recupere sua senha',
-             html: '<p>Ok, utilize o token a seguir para resetar a senha</p>' + token
+             html: '<p style="color:red">Ok, utilize o token a seguir para resetar a senha</p>' + token
         }, (err) => {
             if (err)
                 return res.status(400).send({error : 'Erro ao enviar email'});
